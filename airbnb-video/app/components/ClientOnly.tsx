@@ -5,7 +5,7 @@ interface ClientOnlyProps {
   children: React.ReactNode;
 }
 
-export const ClientOnly: React.FC<ClientOnlyProps> = ({ children }) => {
+const ClientOnly: React.FC<ClientOnlyProps> = ({ children }) => {
   const [hasMounted, setHasMounted] = useState(false);
 
   useEffect(() => {
@@ -17,3 +17,5 @@ export const ClientOnly: React.FC<ClientOnlyProps> = ({ children }) => {
   }
   return <>{children}</>;
 };
+
+export default ClientOnly;

@@ -13,7 +13,7 @@ interface InputProps {
   register: UseFormRegister<FieldValues>;
   errors: FieldErrors;
 }
-export const Input: React.FC<InputProps> = ({
+const Input: React.FC<InputProps> = ({
   id,
   label,
   type = "text",
@@ -76,3 +76,5 @@ export const Input: React.FC<InputProps> = ({
     </div>
   );
 };
+
+export default Input;

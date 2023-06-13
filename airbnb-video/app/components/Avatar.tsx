@@ -2,7 +2,7 @@
 import Image from "next/image";
 import React from "react";
 
-export const Avatar = () => {
+const Avatar = () => {
   return (
     <Image
       className="rounded-full"
@@ -13,3 +13,5 @@ export const Avatar = () => {
     />
   );
 };
+
+export default Avatar;
